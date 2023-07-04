@@ -1,0 +1,17 @@
+doctype html 
+html 
+    head 
+        title loginPage
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        block style 
+            include ../static/style.css
+        block script
+            include ../static/index.js
+        body 
+            script(src="https://unpkg.com/aos@next/dist/aos.js")
+            script. 
+                AOS.init();  
+
+            block content 
+
+footer

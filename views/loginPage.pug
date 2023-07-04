@@ -1,0 +1,15 @@
+extends base.pug
+block style 
+    style 
+      include ../static/style.css
+
+block script 
+
+block content 
+    div.mainBox
+        div.formBox
+            form(action="/loginPage" method="post" class="form1")
+                div.firstInput 
+                    input(type="email" class="myInput" name ="email" placeholder="Email ID" required)
+                    input(type="password"  class="myInput" name="password" placeholder="Password" required)
+                    button.myInput.btn Log In

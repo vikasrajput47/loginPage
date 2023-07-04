@@ -1,0 +1,20 @@
+extends base.pug
+block style 
+    style 
+      include ../static/style.css
+
+block script 
+
+block content 
+    div.main
+        div.home
+            div.info 
+                |Welcome to my website
+            div.loginInfo
+                ul
+                    li Sign up if your are new
+                    li Login using your email ID and password
+        div.mainPage 
+            ul.mainPageLogin 
+                li.mainDetail.a #[a(href="loginPage") Log In]
+                li.mainDetail.b #[a(href="signUp") Sign Up]

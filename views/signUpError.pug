@@ -1,0 +1,13 @@
+extends base.pug
+block style 
+    style 
+        include ../static/style.css
+block script 
+
+block content 
+    div.error
+        ul.container
+            li.containerList
+                |Email already registered! 
+            li.containerList
+                a(href="/loginPage") Log In 
